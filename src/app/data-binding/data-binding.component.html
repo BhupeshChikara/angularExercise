@@ -1,0 +1,5 @@
+<form (ngSubmit)="clear(ngForm)" #ngForm="ngForm">
+    <input type="text" name="userName" [(ngModel)]="userName" required> <br>
+    <p *ngIf="userName">{{userName}}</p>
+    <button type="submit" [disabled]="!ngForm.valid">Clear</button>
+</form>
