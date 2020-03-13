@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-data-binding',
@@ -7,14 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataBindingComponent implements OnInit {
   userName:string;
+  name:string="hello";
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  clear(form){
+  clear(form:NgForm){
     console.log(form.value)
-    form.reset();
+    form.reset()
+  }
+
+  submit(value){
+    console.log(value.value)
   }
 
 }
