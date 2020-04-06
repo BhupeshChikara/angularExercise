@@ -1,3 +1,3 @@
 <p>{{contact}}</p>
 
-<button (click)="clear()">Clear</button>
+<button (click)="clear()" [disabled]="!contact">Clear</button>

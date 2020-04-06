@@ -1,0 +1,37 @@
+.show{
+    background-color: #ddd;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    padding: 20px;
+}
+.red{
+    background-color: lightsalmon;
+    border: 1px solid salmon;
+    border-radius: 2px;
+    padding: 20px;
+}
+.blue{
+    background-color: lightblue;
+    border: 1px solid skyblue;
+    border-radius: 2px;
+    padding: 20px;
+}
+.lists{
+    display: flex;
+    flex-direction: column;
+}
+.red-li{
+    background-color: lightsalmon;
+    border: 1px solid salmon;
+    border-radius: 2px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.blue-li{
+    background-color: lightblue;
+    border: 1px solid skyblue;
+    border-radius: 2px;
+    padding: 20px;
+    margin-bottom: 15px;
+
+}

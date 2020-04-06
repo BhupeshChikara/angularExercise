@@ -7,6 +7,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './parent/child/child.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { InnerTextDirective } from './inner-text.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ChildComponent } from './parent/child/child.component';
     DataBindingComponent,
     EventBindingComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    DirectivesComponent,
+    InnerTextDirective
   ],
   imports: [
     BrowserModule,

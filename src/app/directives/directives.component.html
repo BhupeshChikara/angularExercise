@@ -1,0 +1,22 @@
+<div class="show" *ngIf="show">
+    <p>Div to hide</p>
+</div>
+
+<button (click)="show=!show">{{show?'hide':'show'}}</button>
+
+<div  [ngClass]="change?'red':'blue'">
+    Class changed
+</div>
+
+<button (click)="change=!change">Change Class</button>
+
+<div *ngFor="let item of items; let i = index" class="lists">
+    <div  [ngClass]="i%2?'red-li':'blue-li'">
+        {{item.name+' '+ item.id}}
+    </div> 
+</div>
+
+<input type="text" [(ngModel)]="name">
+
+<input type="text" #in [(ngModel)]="text">
+<p [appInnerText]="text"></p>
