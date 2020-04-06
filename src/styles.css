@@ -1,12 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-    text-align: center;
+
+form{
+    width:80%;
+    margin: 0 auto;
 }
-input{
+label{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+input,select{
     display: block;
     padding: 12px;
-    margin: 30px auto;
     width: 50%;
+}
+input[type='radio']{
+    display: inline-block;
+    width: 30px;
 }
 button{
     background-color: ddd;
@@ -15,5 +25,5 @@ button{
     border-radius: 3px;
     cursor: pointer;
     display: block;
-    margin: 10px auto;
+    margin: auto;
 }
