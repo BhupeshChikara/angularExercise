@@ -14,6 +14,8 @@ import { ReactiveComponent } from './forms/reactive/reactive.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { HttpsComponent } from './https/https.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReversePipe } from './pipes/reverse.pipe';
+import { VowelOccurancePipe } from './pipes/vowel-occurance.pipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { HttpClientModule } from '@angular/common/http';
     TemplateDrivenComponent,
     ReactiveComponent,
     PipesComponent,
-    HttpsComponent
+    HttpsComponent,
+    ReversePipe,
+    VowelOccurancePipe
   ],
   imports: [
     BrowserModule,

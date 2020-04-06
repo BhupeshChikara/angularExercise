@@ -1,1 +1,20 @@
-<p>pipes works!</p>
+<ng-content></ng-content>
+<p>Date pipe : {{getDate() | date}}</p>
+
+<label for="text"> String to convert :- </label>
+
+<input id="text" type="text" [(ngModel)]="string">
+
+<p>
+    Titlecase pipe : {{string | titlecase}}
+</p>
+
+<p>
+    Reverse pipe : {{string | reverse}}
+</p>
+
+<p>
+    Vowel pipe : {{string | vowelOccurance}}
+</p>
+
+
